@@ -29,7 +29,8 @@ def score(text):
 
 # Brute force
 possible = {(text:=decrypt(b, k), k): score(text) for k in range(255)}
-val = sorted(possible, key=possible.get)[0]
+sval = sorted(possible, key=possible.get)
+val = sval[0]
 decrypt_text, key = val[0], val[1]
 
 print("Cipher text in hex:", cipher_text)
