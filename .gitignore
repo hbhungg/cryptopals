@@ -1,4 +1,5 @@
 target
 .ccls-cache/
 __pycache__/
+*.txt
 
